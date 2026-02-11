@@ -31,7 +31,9 @@ import EMSLogo from './assets/work_img/ems.png';
 import AnimatedLogo from './assets/work_img/animated.png';
 import EcommerceLogo from './assets/work_img/E-commerce.png';
 import SundownLogo from './assets/work_img/sundown.png';
-
+import RealtimeLogo from './assets/work_img/Real-Time Map.png'
+import GlassmorphismLogo from './assets/work_img/glassmorphism.png'
+import RockPaperLogo from './assets/work_img/game.png'
 
 export const SkillsInfo = [
   {
@@ -154,31 +156,33 @@ export const SkillsInfo = [
     },
     {
       id: 4,
-      title: "Food Reel App",
+      title: "Real Time Map",
       description:
-        "Food Reel App is a full stack web application that allows users to explore and share short food videos in a reel style format. It includes user authentication, video uploads, likes, and comments. The app focuses on smooth performance, responsive design, and seamless interaction between the frontend and backend to deliver an engaging social experience.",
-    //   image: taskremLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "JWT Authentication"],
-      github: "https://github.com/Anshu010412/FoodReel",
+        "A real time map feature that tracks and displays live user locations by sending location updates through Socket.io, allowing instant synchronization between users on the map without page refresh.",
+      image: RealtimeLogo,
+      tags: ["EJS", "Socket.IO", "REAL TIME", "CSS", "Javascript"],
+      github: "https://github.com/Anshu010412/Real-Time-Map",
+      webapp: "https://real-time-map--ghoshanish249.replit.app",
     },
     {
-      id: 7,
-      title: "Image Search App",
+      id: 5,
+      title: "Glassmorphism Login Page",
       description:
-        "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-    //   image: imagesearchLogo,
-      tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Search-App",
-      webapp: "https://imagsearch.netlify.app/",
+        "A clean and modern glassmorphism login page with a frosted glass effect, soft blur, and subtle transparency that creates a sleek, premium feel while keeping the interface simple and easy to use.",
+      image: GlassmorphismLogo,
+      tags: ["HTML5", "CSS", "JavaScript"],
+      github: "https://github.com/Anshu010412/Glassmorphism-Login-Page",
+      webapp:"https://anshu010412.github.io/Glassmorphism-Login-Page/"
     },
+    
     {
-      id: 8,
-      title: "Image Background Remover",
+      id: 6,
+      title: "Rock Paper Scissor Game",
       description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-    //   image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
+        "Rock Paper Scissors is a simple and fun hand game where two players compete by choosing rock, paper, or scissors at the same time. Each choice has a rule: rock beats scissors, scissors beat paper, and paper beats rock. In the digital version, the player competes against the computer, making quick decisions while the game instantly shows the winnerReact.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
+      image: RockPaperLogo,
+      tags: ["HTML5", "CSS", "JavaScript"],
+      github: "https://github.com/Anshu010412/Rock-Paper-game",
+      webapp: "https://anshu010412.github.io/Rock-Paper-game/",
     },
   ];  

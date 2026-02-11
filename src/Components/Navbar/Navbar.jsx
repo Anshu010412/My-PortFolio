@@ -47,11 +47,11 @@ const Navbar = () => {
         <div className="text-xl font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">
-            <span className="text-[#2ddb4f]">A</span>nshu
+            <span className="text-[#F45B69]">A</span>nshu
           </span>
           <span className="text-[#8245ec]">/</span>
           <span className="text-white">
-            <span className="text-[#ffa500]">K</span>umar
+            <span className="text-[#1E9AFE]">K</span>umar
           </span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>

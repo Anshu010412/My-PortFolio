@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Anshu Kumar 😎</h2>
+        <h2 className="text-xl font-bold text-[#D1D5DB] sm:hover:text-blue-400">Anshu Kumar<span className="text-2xl">🧑‍💻</span></h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
@@ -23,7 +23,6 @@ const Footer = () => {
             { name: "Skills", id: "skills" },
             { name: "Projects", id: "projects" },
             { name: "Education", id: "education" },
-            // { name: "Experience", id: "experience" },
 
           ].map((item, index) => (
             <button

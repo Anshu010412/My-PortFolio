@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_dpnsv5y",  // Replace with your EmailJS Service ID
-        "template_1xde6id",  // Replace with your EmailJS Template ID
+        "service_dpnsv5y", // Replace with your EmailJS Service ID
+        "template_1xde6id", // Replace with your EmailJS Template ID
         form.current,
-        "j-fXj2PzSSDfzFx7T"  // Replace with your EmailJS Public Key
+        "j-fXj2PzSSDfzFx7T", // Replace with your EmailJS Public Key
       )
       .then(
         () => {
@@ -33,33 +33,43 @@ const Contact = () => {
         },
         (error) => {
           console.error("Error sending message:", error);
-          toast.error(error.text || "Failed to send message. Please try again.", {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: "dark",
-          });
-        }
+          toast.error(
+            error.text || "Failed to send message. Please try again.",
+            {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              theme: "dark",
+            },
+          );
+        },
       );
   };
 
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw] bg-skills-gradient animate-clip-path"
+      className="flex flex-col items-center justify-center py-22 px-[12vw] md:px-[7vw] lg:px-[20vw] bg-skills-gradient animate-clip-path"
     >
       {/* Toast Container */}
-      <ToastContainer className={`mt-[80px]`} />
+      <ToastContainer
+        position="top-right"
+        style={{
+          top: "90px", // height of navbar
+          zIndex: 999999,
+        }}
+      />
 
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          I’d love to hear from you—reach out for any opportunities or questions!
+          I’d love to hear from you—reach out for any opportunities or
+          questions!
         </p>
       </div>
 
@@ -69,7 +79,11 @@ const Contact = () => {
           Connect With Me <span className="ml-1">🚀</span>
         </h3>
 
-        <form ref={form} onSubmit={sendEmail} className="mt-4 flex flex-col space-y-4">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="mt-4 flex flex-col space-y-4"
+        >
           <input
             type="email"
             name="email"
@@ -102,6 +116,7 @@ const Contact = () => {
           {/* Send Button */}
           <button
             type="submit"
+            disabled={isSent}
             className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition"
           >
             Send
