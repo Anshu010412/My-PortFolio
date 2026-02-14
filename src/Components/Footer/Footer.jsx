@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -19,10 +19,10 @@ const Footer = () => {
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
-            { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
-            { name: "Projects", id: "work" },
-            { name: "Education", id: "education" },
+            { label: "About", id: "about" },
+            { label: "Skills", id: "skills" },
+            { label: "Projects", id: "work" },
+            { label: "Education", id: "education" },
 
           ].map((item, index) => (
             <button
@@ -30,7 +30,7 @@ const Footer = () => {
               onClick={() => handleScroll(item.id)}
               className="hover:text-purple-500 text-sm sm:text-base my-1"
             >
-              {item.name}
+              {item.label}
             </button>
           ))}
         </nav>
