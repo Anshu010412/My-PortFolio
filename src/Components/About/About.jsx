@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import Tilt from 'react-parallax-tilt'
-import profileImage from '../../assets/Profile_img/profile.img.jpg'
+import profileImage from '../../assets/Profile_img/profile.img.webp'
 
 const About = () => {
   const [text] = useTypewriter({
